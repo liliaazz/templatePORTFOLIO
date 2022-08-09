@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Epilogue:wght@500;700&display=swap');
+
+
+
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  gap: 640px;
+
+}
+
+.letschat{
+  color: #ffffff;
+}
+
+
+.infoField{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.navbar_btn {
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+  margin-left: 40px;
+  font-family: 'Epilogue', sans-serif;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.infoField a {
+  text-decoration: none;
+}
+
+.brandLogo {
+  margin-top: 16px;
+  margin-left: 35px;
+
+}
+
+.myBlog , .myProjects {
+  margin-left: 40px;
+  padding-top: 20px;
+  color: black;
+}
+
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.introPara{
+  text-align: center;
+  line-height: 1.9em;
+}
+
+.introPara .boldPara {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.introPara .smallPara {
+  color: #123244;
+}
+
+.introPic {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.introPic a {
+  margin-top: 15px;
+  color: black;
+  font-family: 'Epilogue', sans-serif;
+}
+
+#projectSection h1{
+   text-align: center;
+   color: white;
+   margin-top: 30px;
+   font-size: 30px;
+}
+
+#projectSection {
+  margin-top: 160px;
+
+  border: 1px solid hsl(201, 19%, 47%);
+  background-color: hsl(201, 19%, 47%);
+  display: flex;
+  flex-direction: column;
+}
+
+.img1, .img2, .img3{
+  border-radius: 15px;
+  cursor: pointer;
+  height: 150px;
+}
+
+.img1:hover, .img2:hover , .img3:hover {
+  opacity: 0.5;
+}
+
+
+
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.project2 h3, .project1 h3, .project3 h3{
+     text-align: center;
+     color: white;
+     margin-top: 20px;
+}
+
+#projectSection a {
+  text-align: center;
+  text-decoration: hashed;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+#socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.linkedIn, .Instagram ,.twitter {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkedIn a, .Instagram a,.twitter a {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+#contactSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactSection h1{
+  text-align: center;
+  margin-top: 70px;
+  font-size: 40px;
+}
+
+.link:hover{
+  color: rgb(136, 59, 59);
+  
+  text-decoration: solid;
+}
+
+.Instagram {
+  align-items: center;
+}
+
+footer {
+  background-color: hsl(201, 19%, 47%);
+  padding-top: 15px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu{
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(201, 19%, 47%); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(201, 19%, 47%); 
+}
+
+@media (max-width: 900px) and (min-width: 750px){
+  .infoField{
+    width: 600px;
+  }
+  .nav_bar{
+    gap: 310px;
+  }
+
+  header{
+    width: 915px;
+  }
+
+}
+
+@media (min-width: 901px) and (max-width: 1280px){
+  .nav_bar{
+    gap: 60px;
+  }
+  .img1, .img2, .img3{
+    height: 120px;
+  }
+}
+
+
+
+@media only screen and (max-width: 430px){
+  .firstRow{
+    display: flex;
+    flex-direction: column;
+  }
+  .boldPara {
+    font-size: 10px;
+  }
+   .infoField{
+     display: none;
+   }
+
+  .brandLogo{
+    width: 100%;
+    display: flex;
+    margin-left: 15px;
+  }
+
+   .menu{
+     display: block;
+     margin-left: 75%;
+     margin-top: 5px;
+   }
+
+   #projectSection{
+     margin-top: 15%;
+     width: 100%;
+   }
+  
+   .project1 , .project2, .project3{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .project1 h3, .project2 h3, .project3 h3{
+     margin-top: 0px;
+   }
+
+   .active{
+     flex-direction: column;
+     width: 60%;
+     border: 1px solid black;
+     position: absolute;
+     z-index: 1;
+     margin-left: 45%;
+     background-color: white;
+     margin-top: 0px;
+   }
+   .navbar_btn{
+    margin-bottom: 100vh;
+   }
+   .close{
+     display: none;
+     margin-top: 10px;
+     margin-left: 70%;
+   }
+   .navbar_btn{
+    margin-bottom: 100vh;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    width: 130px;
+   }
+
+   .myBlog , .myProjects {
+     margin-top: 15px;
+   }
+}
+
+#close, .closeimg{
+  display: none;
+}
